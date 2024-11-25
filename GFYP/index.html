@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App - Southern Province, Zambia</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Southern Province Weather Updates</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="fetchWeather('Livingstone')">Livingstone</a></li>
+                <li><a href="#" onclick="fetchWeather('Choma')">Choma</a></li>
+                <li><a href="#" onclick="fetchWeather('Namwala')">Namwala</a></li>
+                <li><a href="#" onclick="fetchWeather('Monze')">Monze</a></li>
+                <li><a href="#" onclick="fetchWeather('Mazabuka')">Mazabuka</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Weather Display Section -->
+    <div class="weather-container">
+        <h2>Weather in <span id="city-name">Choma</span></h2>
+        <div id="current-weather">
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p>Temperature: <span id="temp"></span>°C</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wind-speed"></span> m/s</p>
+            <p>Condition: <span id="condition"></span></p>
+        </div>
+    </div>
+
+    <!-- 5-Day Forecast Section -->
+    <div class="forecast-container">
+        <h2>5-Day Weather Forecast</h2>
+        <div id="forecast"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="http://www.icuzambia.net">ICU Zambia</a></li>
+            <li><a href="https://www.zrde.org">ZRDC</a></li>
+        </ul>
+        <p>All Rights Reserved. Designed and Maintained by Anang'anga Akakambama, SIN:1704375254</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('img/pexels-fotios-photos-1921336.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(251, 253, 252);
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap; /* Ensures menu items wrap on smaller screens */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(14, 124, 128);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Weather Display Section */
+.weather-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#current-weather img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+/* 5-Day Forecast Section */
+.forecast-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 900px;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-day {
+    background-color: rgba(255, 255, 255, 0.562);
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+}
+
+.forecast-day img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    color: rgb(26, 17, 158);
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .weather-container, .forecast-container {
+        width: 95%;
+    }
+
+    .forecast-day {
+        width: 120px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .weather-container, .forecast-container {
+        width: 100%;
+    }
+
+    .forecast-day {
+        width: 100px;
+    }
+
+    .forecast-day img {
+        width: 40px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
